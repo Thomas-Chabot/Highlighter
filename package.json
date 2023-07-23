@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/highlighter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A package for highlighting parts, which applies an outline/border to them. Works for BaseParts and MeshParts.",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -10,13 +10,17 @@
     "copy-package": "copy package.json out"
   },
   "keywords": [],
-  "author": "",
+  "author": "L2000",
   "license": "ISC",
   "types": "out/index.d.ts",
   "files": [
     "out",
     "!**/*.tsbuildinfo"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Chabot/Roblox-Highlighter.git"
+  },
   "publishConfig": {
     "access": "public"
   },
