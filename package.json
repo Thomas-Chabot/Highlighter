@@ -6,8 +6,8 @@
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "prepublishOnly": "npm run build",
-    "copy-package": "copy package.json out"
+    "copyPackage": "cp package/package.json out/package.json",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "L2000",
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thomas-Chabot/Roblox-Highlighter.git"
+    "url": "git+https://github.com/Wiggly-Games/Roblox-Highlighter.git"
   },
   "publishConfig": {
     "access": "public"

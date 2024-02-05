@@ -1,0 +1,28 @@
+{
+  "name": "@wiggly-games/highlighter",
+  "version": "0.0.29",
+  "description": "Object highlighter similar to the Roblox Highlighter object. Works on low-end devices.",
+  "main": "init.lua",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiggly-Games/ObjectHighlighter.git"
+  },
+  "author": "L2000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wiggly-Games/ObjectHighlighter/issues"
+  },
+  "homepage": "https://github.com/Wiggly-Games/ObjectHighlighter#readme",
+  "publishConfig": {
+    "@wiggly-games:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@rbxts/beacon": "^2.1.1",
+    "@rbxts/maid": "^1.1.0",
+    "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/services": "^1.5.1"
+  }
+}

@@ -1,8 +1,8 @@
 ## Introduction
-@rbxts/highlighter is a package for highlighting MeshParts and BaseParts. It provides utility methods that can be used on the parts, and provides highlights around those parts.
+@wiggly-games/highlighter is a package for highlighting MeshParts and BaseParts. It provides utility methods that can be used on the parts, and provides highlights around those parts.
 
 ## Installation
-npm install @rbxts/highlighter
+npm install @wiggly-games/highlighter
 
 ## Documentation
 The Highlighter package provides a few methods that can be used for interacting with highlights.
