@@ -22,24 +22,32 @@ function Configure(config: Configuration) {
 }
 
 // Highlights the target part. Applies the given configuration.
-export function Highlight(part: BasePart, configuration: Configuration) {
-	assert(
-		!highlights.has(part),
-		`Attempted to highlight ${part}, but a previous highlight was already applied. Please remove the highlight first.`,
-	);
+export function Highlight(part: BasePart, configuration: Configuration): boolean {
+	// If the object is already highlighted, we can skip highlighting
+	if (highlights.has(part)) {
+		return false;
+	}
 
 	Configure(configuration);
 
 	const HighlightClass = part.IsA("MeshPart") ? MeshHighlighter : BoxHighlighter;
 	const highlighterClass = new HighlightClass(part, highlightsFolder);
 	highlights.set(part, highlighterClass);
+
+	return true;
 }
 
 // Removes highlight from a part.
-export function RemoveHighlight(part: BasePart) {
-	assert(highlights.get(part), `Could not find highlight for part: ${part}`);
+export function RemoveHighlight(part: BasePart): boolean {
+	// If the part isn't highlighted, we can skip without doing anything
+	if (!highlights.has(part)) {
+		return false;
+	}
+
 	highlights.get(part)?.Destroy();
 	highlights.delete(part);
+
+	return true;
 }
 export function Clear() {
 	highlights.forEach((highlight) => highlight.Destroy());
