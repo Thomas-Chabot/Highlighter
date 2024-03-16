@@ -19,6 +19,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm install roblox-ts
+      - run: npm install
       - run: npm run build
       - run: npm run copyPackage
       - run: npm publish
