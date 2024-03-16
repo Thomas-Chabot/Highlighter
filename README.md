@@ -18,3 +18,18 @@ Returns an array of all objects that are currently highlighted.
 
 ### Clear()
 Removes all highlights.
+
+## Configuration
+Configuration is controlled by passing in a Configuration object. The Configuration should specify the following properties:
+	FillColor: Color3;
+        The Color to fill the object in with.
+	OutlineColor: Color3;
+        The Color to outline the object with.
+	FillTransparency: number;
+        The transparency of the filler portion of the highlight. Should be set between 0-1; 1 is fully invisible.
+	OutlineTransparency: number;
+        The transparency for the outline of the highlight. Should be set between 0-1; 1 is fully invisible.
+	MeshOutlineSize: number;
+        The Outline Size to use with meshes. This should be small; a good example value is 0.025.
+	BoxOutlineSize: number;
+        The Outline Size to use with box highlights. This is used for regular parts.
