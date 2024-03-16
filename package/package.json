@@ -19,10 +19,19 @@
   "publishConfig": {
     "@wiggly-games:registry": "https://npm.pkg.github.com"
   },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.3.0-types.0",
+    "@rbxts/types": "^1.0.705",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-roblox-ts": "^0.0.35",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
   "dependencies": {
-    "@rbxts/beacon": "^2.1.1",
-    "@rbxts/maid": "^1.1.0",
-    "@rbxts/object-utils": "^1.0.4",
-    "@rbxts/services": "^1.5.1"
+    "@rbxts/object-utils": "^1.0.4"
   }
 }
