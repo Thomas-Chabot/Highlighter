@@ -1,6 +1,6 @@
 {
   "name": "@wiggly-games/highlighter",
-  "version": "0.0.29",
+  "version": "0.1.0",
   "description": "Object highlighter similar to the Roblox Highlighter object. Works on low-end devices.",
   "main": "init.lua",
   "scripts": {
